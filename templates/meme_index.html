@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meme Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="30;url=http://127.0.0.1:5000/" />
+
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: Georgia, serif;
+            font-size: 24px;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A website to gather some memes!</h1>
+
+    <p>Here is your meme! This will refresh in 30 seconds!</p>
+
+    <p>
+        <img src="{{ meme_photu }}" alt="Meme Image">
+    </p>
+
+    <p>{{ meme_desc }}</p>
+</body>
+</html>
